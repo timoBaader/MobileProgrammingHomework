@@ -44,6 +44,7 @@ export default function ShoppingList() {
         style={styles.list}
         data={listData}
         renderItem={({ item }) => <Text>{item.key}</Text>}
+        keyExtractor={(item, index) => index.toString()}
       ></FlatList>
 
       <StatusBar style="auto" />

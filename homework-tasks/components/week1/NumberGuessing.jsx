@@ -26,8 +26,7 @@ export default function Calculator() {
   }
 
   function compareNumbers() {
-    var aa = amountOfGuesses;
-    setAmountOfGuesses(aa + 1);
+    setAmountOfGuesses(amountOfGuesses + 1);
 
     console.log(randomNumber);
     if (guess === randomNumber) {
